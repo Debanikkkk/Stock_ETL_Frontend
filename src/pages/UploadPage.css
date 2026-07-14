@@ -1,0 +1,109 @@
+.upload-page{
+    padding: 110px 24px 32px;
+    min-height: calc(100vh - 110px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(2,6,23,0.6), rgba(2,6,23,0.45));
+}
+
+.upload-panel{
+    width: min(980px, 96%);
+    padding: 28px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    color: #e6eef8;
+    box-shadow: 0 30px 80px rgba(2,6,23,0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.upload-panel__header{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.upload-eyebrow{
+    margin: 0;
+    font-size: 0.82rem;
+    color: rgba(226,232,240,0.8);
+}
+
+.upload-title{
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.upload-sub{
+    margin: 0;
+    color: rgba(226,232,240,0.7);
+}
+
+.upload-dropzone{
+    margin-top: 8px;
+    border: 2px dashed rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 22px;
+    display: grid;
+    place-items: center;
+    min-height: 120px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+}
+
+.upload-dropzone input[type=file]{
+    display: none;
+}
+
+.upload-dropzone label{
+    cursor: pointer;
+    color: rgba(226,232,240,0.85);
+    padding: 12px 18px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.02);
+}
+
+.upload-actions{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.upload-actions .primary{
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: none;
+    background: linear-gradient(135deg, #7dd3fc, #818cf8);
+    color: #07263b;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.upload-message{
+    color: rgba(226,232,240,0.8);
+}
+
+.upload-list{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.upload-list__item{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.03);
+}
+
+@media (max-width: 720px){
+    .upload-panel{padding:18px}
+    .upload-title{font-size:1.15rem}
+}

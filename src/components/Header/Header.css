@@ -1,0 +1,107 @@
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 18px;
+    height: 68px;
+    background: rgba(2, 6, 23, 0.52);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    color: #f8fafc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.brand-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-mark {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    color: white;
+    font-size: 0.96rem;
+    box-shadow: 0 6px 18px rgba(129,140,248,0.12);
+}
+
+.brand-label {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.brand-subtitle {
+    font-size: 0.74rem;
+    color: rgba(248, 250, 252, 0.7);
+}
+
+.options-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.options-box a {
+    cursor: pointer;
+    color: rgba(248, 250, 252, 0.9);
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.options-box a:hover {
+    color: #ffffff;
+    background: rgba(255,255,255,0.03);
+}
+
+/* New tools section */
+.tools-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.tools-box a {
+    cursor: pointer;
+    color: rgba(248, 250, 252, 0.95);
+    background: linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.04);
+    box-shadow: 0 6px 20px rgba(2,6,23,0.35);
+}
+
+.tools-box a:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+    .header-box {
+        padding: 0 14px;
+        height: 70px;
+    }
+
+    .options-box {
+        gap: 12px;
+        font-size: 0.92rem;
+    }
+
+    .tools-box {
+        display: none;
+    }
+}
